@@ -1,0 +1,21 @@
+mixin intro()
+    .intro 
+        .intro__body.container 
+            .intro__left 
+                h1.intro__title #[span Упаковочные пакеты] любых размеров
+                p.intro__desc Подберем лучшие варианты для решения ваших задач
+                a(href="#!").intro__btn Перейти в каталог 
+                    img(src="@img/right-arrow.svg", alt="" draggable="false") 
+            .intro__slider 
+                .intro__swiper.swiper 
+                    .intro__swiper-wrapper.swiper-wrapper 
+                        .intro__slide.swiper-slide 
+                            .intro__img 
+                                img(src="@img/intro-img-1.png", alt="" draggable="false")
+                        .intro__slide.swiper-slide 
+                            .intro__img 
+                                img(src="@img/intro-img-2.png", alt="" draggable="false")
+                        .intro__slide.swiper-slide 
+                            .intro__img 
+                                img(src="@img/intro-img-3.png", alt="" draggable="false")
+                    .intro__pagination.swiper-pagination

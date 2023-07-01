@@ -1,3 +1,45 @@
 mixin header()
     header.header 
         .header__nav.container
+            .header__top
+                .header__left 
+                    a(href="index.html").logo lux#[span packet]
+                    form(action="").header__form.disable-xl
+                        input(type="text" placeholder="Поиск").header__input
+                        button(type="submit").header__search 
+                            img(src="@img/search.svg", alt="" draggable="false")  
+                .header__right 
+                    .header__medias 
+                        a(href="https://telegram.com").header__media
+                            img(src="@img/telegram.svg", alt="" draggable="false")
+                        a(href="https://whatsapp.com").header__media
+                            img(src="@img/whatsapp.svg", alt="" draggable="false")
+                        a(href="https://whatsapp.com").header__media.enable-xl
+                            img(src="@img/phone.svg", alt="" draggable="false")
+                    .header__info
+                        a(href="mailto::luxpacket@mail.ru").header__mail 
+                            img(src="@img/email.png", alt="" draggable="false") 
+                            | luxpacket@mail.ru
+                        a(href="").header__btn Заказать звонок 
+                    .menu
+                        .menu-btn
+                    ul.header__list
+                        li.header__li   
+                            a(href="#!").header__link Преимущества 
+                        li.header__li   
+                            a(href="#!").header__link Как мы работаем 
+                        li.header__li   
+                            a(href="#!").header__link Нам доверяют 
+                        li.header__li   
+                            a(href="#!").header__link Каталог 
+                        li.header__li   
+                            a(href="#!").header__link Отзывы 
+                        li.header__li   
+                            a(href="#!").header__link Популярные вопросы 
+                        a(href="#!").header__email 
+                            img(src="@img/email-white.svg", alt="" draggable="false")
+                            | luxpacket@mail.ru
+            form(action="").header__form.enable-xl
+                input(type="text" placeholder="Поиск").header__input
+                button(type="submit").header__search 
+                    img(src="@img/search.svg", alt="" draggable="false")  
