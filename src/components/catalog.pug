@@ -4,10 +4,134 @@ mixin catalog()
             h2.catalog__title Каталог
             .catalog__content 
                 .catalog__item 
-                    p.catalog__subtitle Пакеты с клеевым клапаном
-                    ul.catalog__list 
-                        li.catalog__li Многоразового использования
-                        li.catalog__li Красивый внешний вид
-                        li.catalog__li Прочные пакеты
-                        li.catalog__li Различной толщины от 20 мкм., и выше
-                    
+                    .catalog__top
+                        p.catalog__subtitle Пакеты с клеевым клапаном
+                        ul.catalog__list 
+                            li.catalog__li
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3.5" y="0.5" width="1" height="8" fill="white"/>
+                                    <rect x="8" y="4" width="1" height="8" transform="rotate(90 8 4)" fill="white"/>
+                                    <rect x="7.18198" y="6.97485" width="1" height="8" transform="rotate(135 7.18198 6.97485)" fill="white"/>
+                                    <rect x="6.47485" y="1.31799" width="1" height="8" transform="rotate(45 6.47485 1.31799)" fill="white"/>
+                                </svg>
+                                | Многоразового использования
+                            li.catalog__li
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3.5" y="0.5" width="1" height="8" fill="white"/>
+                                    <rect x="8" y="4" width="1" height="8" transform="rotate(90 8 4)" fill="white"/>
+                                    <rect x="7.18198" y="6.97485" width="1" height="8" transform="rotate(135 7.18198 6.97485)" fill="white"/>
+                                    <rect x="6.47485" y="1.31799" width="1" height="8" transform="rotate(45 6.47485 1.31799)" fill="white"/>
+                                </svg>
+                                | Красивый внешний вид
+                            li.catalog__li
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3.5" y="0.5" width="1" height="8" fill="white"/>
+                                    <rect x="8" y="4" width="1" height="8" transform="rotate(90 8 4)" fill="white"/>
+                                    <rect x="7.18198" y="6.97485" width="1" height="8" transform="rotate(135 7.18198 6.97485)" fill="white"/>
+                                    <rect x="6.47485" y="1.31799" width="1" height="8" transform="rotate(45 6.47485 1.31799)" fill="white"/>
+                                </svg>
+                                | Прочные пакеты
+                            li.catalog__li
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3.5" y="0.5" width="1" height="8" fill="white"/>
+                                    <rect x="8" y="4" width="1" height="8" transform="rotate(90 8 4)" fill="white"/>
+                                    <rect x="7.18198" y="6.97485" width="1" height="8" transform="rotate(135 7.18198 6.97485)" fill="white"/>
+                                    <rect x="6.47485" y="1.31799" width="1" height="8" transform="rotate(45 6.47485 1.31799)" fill="white"/>
+                                </svg>
+                                | Различной толщины от 20 мкм., и выше
+                    .catalog__bottom
+                        a(href="#!").catalog__btn 0.32₽/#[span шт]
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="17.5" cy="17.5" r="17.5" fill="#EDEDED"/>
+                                <path d="M16 23L22 17L16 11" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        .catalog__img 
+                            img(src="@img/catalog-1.png", alt="" draggable="false")
+                .catalog__item 
+                    .catalog__top
+                        p.catalog__subtitle Пакеты прозрачные без клапана
+                        ul.catalog__list 
+                            li.catalog__li
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3.5" y="0.5" width="1" height="8" fill="white"/>
+                                    <rect x="8" y="4" width="1" height="8" transform="rotate(90 8 4)" fill="white"/>
+                                    <rect x="7.18198" y="6.97485" width="1" height="8" transform="rotate(135 7.18198 6.97485)" fill="white"/>
+                                    <rect x="6.47485" y="1.31799" width="1" height="8" transform="rotate(45 6.47485 1.31799)" fill="white"/>
+                                </svg>
+                                | Многоразового использования
+                            li.catalog__li
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3.5" y="0.5" width="1" height="8" fill="white"/>
+                                    <rect x="8" y="4" width="1" height="8" transform="rotate(90 8 4)" fill="white"/>
+                                    <rect x="7.18198" y="6.97485" width="1" height="8" transform="rotate(135 7.18198 6.97485)" fill="white"/>
+                                    <rect x="6.47485" y="1.31799" width="1" height="8" transform="rotate(45 6.47485 1.31799)" fill="white"/>
+                                </svg>
+                                | Красивый внешний вид
+                            li.catalog__li
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3.5" y="0.5" width="1" height="8" fill="white"/>
+                                    <rect x="8" y="4" width="1" height="8" transform="rotate(90 8 4)" fill="white"/>
+                                    <rect x="7.18198" y="6.97485" width="1" height="8" transform="rotate(135 7.18198 6.97485)" fill="white"/>
+                                    <rect x="6.47485" y="1.31799" width="1" height="8" transform="rotate(45 6.47485 1.31799)" fill="white"/>
+                                </svg>
+                                | Прочные пакеты
+                            li.catalog__li
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3.5" y="0.5" width="1" height="8" fill="white"/>
+                                    <rect x="8" y="4" width="1" height="8" transform="rotate(90 8 4)" fill="white"/>
+                                    <rect x="7.18198" y="6.97485" width="1" height="8" transform="rotate(135 7.18198 6.97485)" fill="white"/>
+                                    <rect x="6.47485" y="1.31799" width="1" height="8" transform="rotate(45 6.47485 1.31799)" fill="white"/>
+                                </svg>
+                                | Различной толщины от 20 мкм., и выше
+                    .catalog__bottom
+                        a(href="#!").catalog__btn 0.32₽/#[span шт]
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="17.5" cy="17.5" r="17.5" fill="#EDEDED"/>
+                                <path d="M16 23L22 17L16 11" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        .catalog__img 
+                            img(src="@img/catalog-2.png", alt="" draggable="false")
+                .catalog__item 
+                    .catalog__top
+                        p.catalog__subtitle Пакеты упаковочные под запайку ПВД
+                        ul.catalog__list 
+                            li.catalog__li
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3.5" y="0.5" width="1" height="8" fill="white"/>
+                                    <rect x="8" y="4" width="1" height="8" transform="rotate(90 8 4)" fill="white"/>
+                                    <rect x="7.18198" y="6.97485" width="1" height="8" transform="rotate(135 7.18198 6.97485)" fill="white"/>
+                                    <rect x="6.47485" y="1.31799" width="1" height="8" transform="rotate(45 6.47485 1.31799)" fill="white"/>
+                                </svg>
+                                | Многоразового использования
+                            li.catalog__li
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3.5" y="0.5" width="1" height="8" fill="white"/>
+                                    <rect x="8" y="4" width="1" height="8" transform="rotate(90 8 4)" fill="white"/>
+                                    <rect x="7.18198" y="6.97485" width="1" height="8" transform="rotate(135 7.18198 6.97485)" fill="white"/>
+                                    <rect x="6.47485" y="1.31799" width="1" height="8" transform="rotate(45 6.47485 1.31799)" fill="white"/>
+                                </svg>
+                                | Красивый внешний вид
+                            li.catalog__li
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3.5" y="0.5" width="1" height="8" fill="white"/>
+                                    <rect x="8" y="4" width="1" height="8" transform="rotate(90 8 4)" fill="white"/>
+                                    <rect x="7.18198" y="6.97485" width="1" height="8" transform="rotate(135 7.18198 6.97485)" fill="white"/>
+                                    <rect x="6.47485" y="1.31799" width="1" height="8" transform="rotate(45 6.47485 1.31799)" fill="white"/>
+                                </svg>
+                                | Прочные пакеты
+                            li.catalog__li
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3.5" y="0.5" width="1" height="8" fill="white"/>
+                                    <rect x="8" y="4" width="1" height="8" transform="rotate(90 8 4)" fill="white"/>
+                                    <rect x="7.18198" y="6.97485" width="1" height="8" transform="rotate(135 7.18198 6.97485)" fill="white"/>
+                                    <rect x="6.47485" y="1.31799" width="1" height="8" transform="rotate(45 6.47485 1.31799)" fill="white"/>
+                                </svg>
+                                | Различной толщины от 20 мкм., и выше
+                    .catalog__bottom
+                        a(href="#!").catalog__btn 0.32₽/#[span шт]
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="17.5" cy="17.5" r="17.5" fill="#EDEDED"/>
+                                <path d="M16 23L22 17L16 11" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        .catalog__img 
+                            img(src="@img/catalog-3.png", alt="" draggable="false")

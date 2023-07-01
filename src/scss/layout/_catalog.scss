@@ -1,0 +1,88 @@
+.catalog{
+    background: #F7F8FA;
+    padding-bottom: 110px;
+    &__title{
+        font-size: 40px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: #262626;
+        margin-bottom: 40px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    &__item{
+        width: calc(33.333% - 20px);
+        border-radius: 6px;
+        background: var(--green, #FF4B4B);
+        box-shadow: 0px 14px 23px 0px rgba(0, 0, 0, 0.05);
+        padding: 24px 24px 0 24px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__subtitle{
+        color: #FFF;
+        font-size: 20px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            border-radius: 1px;
+            background: #FFF;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    &__list{
+        margin-bottom: 40px;
+    }
+    &__li{
+        display: flex;
+        align-items: center;
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &:not(:last-of-type){
+            margin-bottom: 4px;
+        }
+        svg{
+            margin-right: 4px;
+        }
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 12px 12px 12px 32px;
+        color: #262626;
+        font-size: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        span{
+            color: #FF4B4B;
+        }
+        svg{
+            margin-left: 30px;
+        }
+    }
+}
