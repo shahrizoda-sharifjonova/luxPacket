@@ -2,7 +2,7 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-import Swiper, {Pagination } from 'swiper';
+import Swiper, {Navigation, Pagination } from 'swiper';
 
 const swiper = new Swiper();
 
@@ -18,6 +18,36 @@ new Swiper(".intro__swiper", {
     breakpoints:{
       992:{
         spaceBetween:30,
+      }
+    }
+});
+
+new Swiper(".reviews__swiper", {
+    grabCursor: true,
+    modules: [Navigation],
+    slidesPerView: 'auto',  
+    spaceBetween:30,
+    watchSlidesProgress: true,
+    navigation:{
+      prevEl: '.reviews__btn-prev',
+      nextEl: '.reviews__btn-next',
+    },
+    breakpoints:{
+      1400:{
+        spaceBetween:35,
+        slidesPerView: 4,  
+      },
+      1200:{
+        slidesPerView: 4,  
+      },
+      992:{
+        slidesPerView: 3,  
+      },
+      768:{
+        slidesPerView: 2,  
+      },
+      575:{
+        slidesPerView: 1,  
       }
     }
 });

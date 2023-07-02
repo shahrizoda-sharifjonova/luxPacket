@@ -1,0 +1,22 @@
+mixin contacts()
+    .contacts 
+        .contacts__body.container 
+            .contacts__info
+                p.contacts__p Хотите получить образец наших пакетов?
+                h2.contacts__title Оставьте заявку!
+            form(action="").contacts__form
+                .contacts__top 
+                    .contacts__left 
+                        input(type="text" placeholder="ФИО" required).contacts__input  
+                        input(type="number" placeholder="Телефон" required).contacts__input  
+                        input(type="text" placeholder="Адрес пункта выдачи заказов СДЭК" required).contacts__input  
+                    .contacts__right
+                        input(type="mail" placeholder="E-mail" required).contacts__input  
+                        input(type="text" placeholder="Город" required).contacts__input  
+                        input(type="text" placeholder="Размер и количество пакетов" required).contacts__input  
+                .contacts__row 
+                    button(type="submit").contacts__btn Оставить заявку
+                        img(src="@img/right-arrow.svg", alt="" draggable="false")
+                    .contacts__checkbox
+                        input(type="checkbox" name="checkbox" id="checkbox1" checked).contacts__checkbox-input
+                        label(for="checkbox1").contacts__label Я даю согласие на обработку персональных данных

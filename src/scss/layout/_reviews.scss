@@ -1,0 +1,113 @@
+.reviews{
+    padding: 110px 0;
+    overflow-x: hidden;
+    @include media(992){
+        padding: 80px 0;
+    }
+    &__title{
+        color: var(--black, #262626);
+        font-size: 40px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 13px;
+        @include media(768){
+            font-size: 28px;
+            margin-bottom: 7px;
+        }
+    }
+    &__slider{
+        width: 100%;
+    }
+    .swiper{
+        width: calc(100% + 46px);
+        position: relative;
+        padding: 23px;
+        margin-left: -23px;
+        overflow: hidden;
+        &-wrapper{
+            display: flex;
+            width: max-content;
+            align-items: stretch;
+        }
+        &-slide{
+            height: auto;
+        }
+    }
+    &__item{
+        border-radius: 6px;
+        background: #FFF;
+        box-shadow: 0 8px 15px rgba(0,0,0,.09);
+        height: 100%;
+        padding: 20px;
+        position: relative;
+        @include media(575){
+            max-width: 280px;
+            width: 100%;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: url(../img/reviews-figure.svg) center / cover no-repeat;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    &__name{
+        display: flex;
+        align-items: flex-start;
+        font-size: 16px;
+        font-style: normal;
+        font-weight:600;
+        line-height: 130%;
+        color: #262626;
+        margin-bottom: 14px;
+        svg{
+            margin-right: 16px;
+        }
+    }
+    &__desc{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 130%;
+        @include media(575){
+            font-size: 14px;
+        }
+    }
+    &__link{
+        margin-top: 3px;
+        color: var(--green, #FF4B4B);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 130%;
+        text-decoration-line: underline;
+    }
+    &__buttons{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        @include media(768){
+            margin-top: 30px;
+        }
+    }
+    &__btn{
+        &-prev{
+            cursor: pointer;
+            margin-right: 15px;
+            &.swiper-button-disabled{
+                opacity: 0.8;
+            }
+        }
+        &-next{
+            cursor: pointer;
+            &.swiper-button-disabled{
+                opacity: 0.8;
+            }
+        }
+    }
+}
