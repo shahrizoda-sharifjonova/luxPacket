@@ -51,6 +51,24 @@ new Swiper(".reviews__swiper", {
       }
     }
 });
+
+new Swiper(".reports__swiper", {
+    grabCursor: true,
+    modules: [Navigation],
+    slidesPerView: 'auto',  
+    spaceBetween:20,
+    watchSlidesProgress: true,
+    navigation:{
+      prevEl: '.reports__btn-prev',
+      nextEl: '.reports__btn-next',
+    },
+    breakpoints:{
+      576:{
+        slidesPerView: 1,  
+        spaceBetween:30,
+      }
+    }
+});
 const menu = document.querySelector('.menu');
 const headerList = document.querySelector('.header__list');
 const body = document.querySelector('body');
