@@ -1,0 +1,46 @@
+mixin questions()
+    .questions 
+        .questions__body.container 
+            h2.questions__title Подскажем стоимость или #[span решим любой вопрос!]
+            p.questions__desc Оставьте Ваш контакт, и мы вернемся к Вам с решением в течение часа!
+            form(action="").questions__form
+                .questions__top 
+                    .questions__item 
+                        .questions__wrapper
+                            p.questions__subtitle Размеры
+                            input(type="text" placeholder="Длина, мм" required).questions__input
+                        .questions__wrapper
+                            input(type="text" placeholder="Высота, мм" required).questions__input
+                        .questions__wrapper
+                            input(type="text" placeholder="Ширина, мм" required).questions__input
+                    .questions__item 
+                        .questions__wrapper
+                            p.questions__subtitle Тираж
+                            select.questions__select 
+                                option(value="0").questions__option Тираж 
+                                option(value="1").questions__option Тираж 
+                                option(value="2").questions__option Тираж 
+                                option(value="3").questions__option Тираж 
+                        .questions__wrapper
+                            p.questions__subtitle Приложить файлы
+                            .questions__input
+                                .questions__file 
+                                    input(type="file" required).questions__file-input
+                .questions__bottom 
+                    .questions__item
+                        .questions__wrapper.w100
+                            p.questions__subtitle Опишите вашу задачу
+                            textarea(placeholder="Что нужно упаковать?" required).questions__textarea
+                    .questions__item 
+                        .questions__wrapper 
+                            p.questions__subtitle Контактные данные
+                            input(type="text" placeholder="Имя" required).questions__input
+                        .questions__wrapper
+                            input(type="number" placeholder="Телефон" required).questions__input
+                        .questions__wrapper
+                            input(type="mail" placeholder="E-mail" required).questions__input
+                button(type="submit").questions__btn Оставить заявку
+                    img(src="@img/right-arrow.svg", alt="" draggable="false") 
+                .questions__checkbox 
+                    input(type="checkbox" name="queCheckbox" id="queCheckbox1" checked).questions__checkbox-input
+                    label(for="queCheckbox1").questions__label Я даю согласие на обработку персональных данных

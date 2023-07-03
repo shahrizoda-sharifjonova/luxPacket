@@ -130,6 +130,10 @@
         border-radius: 57px;
         background: #FFF;
         width: max-content;
+        transition: 300ms ease;
+        &:hover{
+            background: #E4E4E4;
+        }
         @include media(1400){
             margin-bottom: 20px;
         }

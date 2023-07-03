@@ -141,6 +141,10 @@
         border-radius: 57px;
         background: var(--green, #FF4B4B);
         margin-right: 25px;
+        transition: 300ms ease;
+        &:hover{
+            background: #C12424;
+        }
         @include media(575){
             width: 100%;
             justify-content: center;
