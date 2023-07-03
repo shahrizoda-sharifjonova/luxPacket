@@ -1,0 +1,128 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+    body 
+        .wrapper 
+            include components/header 
+            +header
+            .adhesive 
+                .breadcrumbs 
+                    .breadcrumbs__body.container
+                        p.breadcrumbs__p #[a(href="index.html") Главная] / #[a(href="transparent.html").breadcrumbs__current Прозрачные пакеты]
+                .adhesive__body.container
+                    .adhesive__row
+                        .adhesive__slider 
+                            .adhesive__swiper.swiper 
+                                .adhesive__swiper-wrapper.swiper-wrapper 
+                                    .adhesive__slide.swiper-slide 
+                                        .adhesive__img 
+                                            img(src="@img/adhesive-img-2.png", alt="" draggable="false")
+                                    .adhesive__slide.swiper-slide 
+                                        .adhesive__img 
+                                            img(src="@img/adhesive-img.png", alt="" draggable="false")
+                                    .adhesive__slide.swiper-slide 
+                                        .adhesive__img 
+                                            img(src="@img/adhesive-img-3.png", alt="" draggable="false")
+                                .adhesive__buttons 
+                                    .adhesive__btn-prev
+                                        img(src="@img/arrow-prev.png", alt="" draggable="false")
+                                    .adhesive__btn-next
+                                        img(src="@img/arrow-next.png", alt="" draggable="false")
+                        .adhesive__right 
+                            h2.adhesive__title Прозрачные пакеты
+                            p.adhesive__desc Это вариант упаковки, содержание которой можно просматривать сквозь пакет. Они могут быть сделаны из разных материалов, как пластик, полиэтилен или резина. Такие пакеты удобны для организации личных вещей, хранения продуктов, а также для упаковки подарков. Они помогают повысить уровень гигиены и предотвращают попадание вредных веществ в продукты. К тому же, прозрачные пакеты не требуют дополнительных маркировок и позволяют быстро и легко идентифицировать содержание.
+                            button(type="button").adhesive__btn 0.32₽/шт
+                                img(src="@img/right-arrow.svg", alt="" draggable="false")
+                    .adhesive__info 
+                        h2.adhesive__subtitle #[span Преимущества] прозрачных пакетов:
+                        ul.adhesive__list 
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Прозрачные пакеты позволяют видеть содержимое упаковки без необходимости открывать ее.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Они наиболее удобные для хранения продуктов, которые должны быть на виду, например, фрукты и овощи.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Прозрачные пакеты позволяют легко сортировать и организовывать содержимое хранилища.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Они позволяют зрительно оценить количество продуктов, что может сэкономить время на пересчете или измерении.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Прозрачные пакеты удобны для транспортировки продуктов на дальние расстояния благодаря возможности быстрого контроля качества и количества.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Они могут быть использованы для представления продуктов на витрине магазина или на рынке.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Прозрачные пакеты помогают предотвращать ошибки при подготовке заказов, поскольку содержимое легко увидеть и проверить.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Они улучшают гигиену продуктов, предотвращая контакт с внешней средой.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | С их помощью можно сэкономить место на полках и ящиках, так как не нужно использовать дополнительные контейнеры.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Прозрачные пакеты могут быть использованы не только для продуктов питания, но и для других товаров, требующих транспортировки и хранения.
+            include components/data 
+            +data
+            include components/footer 
+            +footer
+        script(src="js/app.min.js") 

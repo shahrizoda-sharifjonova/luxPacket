@@ -1,0 +1,120 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+    body 
+        .wrapper 
+            include components/header 
+            +header
+            .adhesive 
+                .breadcrumbs 
+                    .breadcrumbs__body.container
+                        p.breadcrumbs__p #[a(href="index.html") Главная] / #[a(href="sealing.html").breadcrumbs__current Пакеты упаковочные под запайку ПВД]
+                .adhesive__body.container
+                    .adhesive__row
+                        .adhesive__slider 
+                            .adhesive__swiper.swiper 
+                                .adhesive__swiper-wrapper.swiper-wrapper 
+                                    .adhesive__slide.swiper-slide 
+                                        .adhesive__img 
+                                            img(src="@img/adhesive-img-3.png", alt="" draggable="false")
+                                    .adhesive__slide.swiper-slide 
+                                        .adhesive__img 
+                                            img(src="@img/adhesive-img.png", alt="" draggable="false")
+                                    .adhesive__slide.swiper-slide 
+                                        .adhesive__img 
+                                            img(src="@img/adhesive-img-2.png", alt="" draggable="false")
+                                .adhesive__buttons 
+                                    .adhesive__btn-prev
+                                        img(src="@img/arrow-prev.png", alt="" draggable="false")
+                                    .adhesive__btn-next
+                                        img(src="@img/arrow-next.png", alt="" draggable="false")
+                        .adhesive__right 
+                            h2.adhesive__title Пакеты упаковочные под запайку ПВД
+                            p.adhesive__desc Это надежное и удобное решение для упаковки различных товаров. Эти пакеты отличаются высокой прочностью и устойчивостью к разрывам, а также хорошей герметичностью. Они идеально подходят для упаковки продуктов питания, медицинских препаратов, химических веществ, электроники и многого другого. Пакеты из ПВД могут быть разных размеров и толщин, в зависимости от потребностей клиента. Они также могут быть снабжены дополнительными элементами, такими как замки-молнии или отверстия для вентиляции. Упаковочные пакеты из ПВД - это удобный и экономичный способ защитить товары в процессе транспортировки и хранения.
+                            button(type="button").adhesive__btn 0.32₽/шт
+                                img(src="@img/right-arrow.svg", alt="" draggable="false")
+                    .adhesive__info 
+                        h2.adhesive__subtitle #[span Преимущества] пакетов упаковочных с застежкой:
+                        ul.adhesive__list 
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Высокая прочность и устойчивость к разрывам.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Хорошая герметичность, защищающая товары от воздействия внешних факторов.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Широкий диапазон размеров и толщин, позволяющий выбрать оптимальный вариант для каждого товара.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Возможность добавления дополнительных элементов, таких как замки-молнии или отверстия для вентиляции.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Экономичность в сравнении с другими видами упаковки.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Легкость и удобство использования.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Подходят для упаковки различных товаров, включая продукты питания, медицинские препараты, химические вещества, электронику и многое другое.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Удобны для транспортировки и хранения товаров.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Экологически чистый материал, который можно перерабатывать.
+            include components/data 
+            +data
+            include components/footer 
+            +footer
+        script(src="js/app.min.js") 

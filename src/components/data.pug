@@ -1,0 +1,21 @@
+mixin data()
+    .data   
+        .data__body.container 
+            h2.data__title Отправьте быструю заявку #[span на расчет стоимости]
+            form(action="").data__form
+                p.data__subtitle Размеры
+                .data__row 
+                    select.data__select 
+                        option(value="0").data__option Пакеты с еврослотом 
+                        option(value="2").data__option Пакеты с еврослотом 
+                        option(value="3").data__option Пакеты с еврослотом 
+                    input(type="text" placeholder="Длина, мм" required).data__input
+                    input(type="text" placeholder="Высота, мм" required).data__input
+                    input(type="text" placeholder="Ширина, мм" required).data__input
+                button(type="button").data__link Добавить позицию
+                .data__wrapper 
+                    button(type="submit").data__btn  Оставить заявку 
+                        img(src="@img/right-arrow.svg", alt="" draggable="false")
+                    .data__checkbox 
+                        input(type="checkbox" name="dataCheckbox" id="dataCheckbox1" checked).data__checkbox-input 
+                        label(for="dataCheckbox1").data__label Я даю согласие на обработку персональных данных

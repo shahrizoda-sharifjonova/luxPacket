@@ -190,8 +190,6 @@
         }
     }
     &__info{
-        max-width: 780px;
-        width: 100%;
         &:not(:last-of-type){
             margin-bottom: 70px;
             @include media(768){
@@ -286,6 +284,8 @@
         }
     }
     &__list{
+        max-width: 780px;
+        width: 100%;
         &:not(:last-of-type){
             margin-right: 60px;
             @include media(768){
