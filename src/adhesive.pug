@@ -1,0 +1,246 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+    body 
+        .wrapper 
+            include components/header 
+            +header
+            .adhesive 
+                .breadcrumbs 
+                    .breadcrumbs__body.container
+                        p.breadcrumbs__p #[a(href="index.html") Главная] / #[a(href="#!").breadcrumbs__current Пакеты с клеевым клапаном]
+                .adhesive__body.container
+                    .adhesive__row
+                        .adhesive__slider 
+                            .adhesive__swiper.swiper 
+                                .adhesive__swiper-wrapper.swiper-wrapper 
+                                    .adhesive__slide.swiper-slide 
+                                        .adhesive__img 
+                                            img(src="@img/adhesive-img.png", alt="" draggable="false")
+                                    .adhesive__slide.swiper-slide 
+                                        .adhesive__img 
+                                            img(src="@img/intro-img-2.png", alt="" draggable="false")
+                                    .adhesive__slide.swiper-slide 
+                                        .adhesive__img 
+                                            img(src="@img/intro-img-3.png", alt="" draggable="false")
+                                .adhesive__buttons 
+                                    .adhesive__btn-prev
+                                        img(src="@img/arrow-prev.png", alt="" draggable="false")
+                                    .adhesive__btn-next
+                                        img(src="@img/arrow-next.png", alt="" draggable="false")
+                        .adhesive__right 
+                            h2.adhesive__title Пакеты с клеевым клапаном
+                            p.adhesive__desc Это удобная и практичная упаковка для хранения и транспортировки различных товаров. Они имеют специальный клеевой клапан, который обеспечивает надежное закрепление содержимого внутри упаковки и защиту от пыли, влаги и других внешних факторов.
+                            button(type="button").adhesive__btn 0.32₽/шт
+                                img(src="@img/right-arrow.svg", alt="" draggable="false")
+                    .adhesive__info 
+                        h2.adhesive__subtitle #[span Преимущества] пакетов с клеевым клапаном:
+                        ul.adhesive__list 
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Удобство использования. Пакеты с клеевым клапаном легко и быстро закрываются, не требуют дополнительных инструментов для закрепления содержимого внутри упаковки.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Надежность. Клеевой клапан обеспечивает надежную защиту товара от пыли, влаги и других внешних факторов, что особенно важно при транспортировке и хранении продуктов питания, медицинских препаратов и других товаров, требующих особой осторожности.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Экономичность. Пакеты с клеевым клапаном имеют небольшой вес и размеры, что позволяет сократить затраты на транспортировку и хранение товаров.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Универсальность. Пакеты с клеевым клапаном могут использоваться для упаковки различных товаров, включая продукты питания, медицинские препараты, косметику, электронику и другие.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Эстетичность. Пакеты с клеевым клапаном могут быть выполнены в различных цветах и дизайнах, что позволяет создать эстетически привлекательную упаковку для товара.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Экологичность. Пакеты с клеевым клапаном могут быть изготовлены из экологически чистых материалов, что позволяет снизить негативное воздействие на окружающую среду.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | Доступность. Пакеты с клеевым клапаном доступны по доступным ценам и могут быть заказаны в любом количестве.
+                            li.adhesive__li
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.50171" width="0.996582" height="10" fill="#FF4B4B"/>
+                                    <rect x="10" y="4.5" width="1" height="10" transform="rotate(90 10 4.5)" fill="#FF4B4B"/>
+                                    <rect x="8.97729" y="8.09351" width="1.25" height="10" transform="rotate(135 8.97729 8.09351)" fill="#FF4B4B"/>
+                                    <rect x="8.09351" y="1.02246" width="1.25" height="10" transform="rotate(45 8.09351 1.02246)" fill="#FF4B4B"/>
+                                </svg> 
+                                | В целом, пакеты с клеевым клапаном являются удобной, практичной и надежной упаковкой для хранения и транспортировки различных товаров. Они обладают множеством преимуществ, которые делают их привлекательными для использования в различных сферах деятельности
+                    .adhesive__info 
+                        h2.adhesive__subtitle #[span Для чего] используются?
+                        p.adhesive__p Безопасная и надежная полипропиленовая упаковка для бытовых, производственных и торговых нужд. Пакеты с клапаном позволяют открывать и закрывать их несколько раз.
+                        p.adhesive__text Упаковочные пакеты с клеевым клапаном можно использовать для хранения и транспортировки:
+                        .adhesive__lists 
+                            ul.adhesive__list 
+                                li.adhesive__li
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | пищевых продуктов
+                                li.adhesive__li
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | лекарственных препаратов
+                                li.adhesive__li
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | косметики
+                                li.adhesive__li
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | парфюмерии
+                                li.adhesive__li
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | бытовых товаров
+                                li.adhesive__li.enable-md
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | канцтоваров
+                                li.adhesive__li.enable-md
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | фурнитуры и др.
+                            ul.adhesive__list 
+                                li.adhesive__li
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | книг
+                                li.adhesive__li
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | любой печатной продукции
+                                li.adhesive__li
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | одежды
+                                li.adhesive__li
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | текстиля
+                                li.adhesive__li
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | аксессуаров
+                                li.adhesive__li.enable-md
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | запчастей
+                            ul.adhesive__list.disable-md 
+                                li.adhesive__li
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | канцтоваров
+                                li.adhesive__li
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | запчастей
+                                li.adhesive__li
+                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4.50171" y="0.5" width="0.996582" height="10" fill="#FF4B4B"/>
+                                        <rect x="10" y="5" width="1" height="10" transform="rotate(90 10 5)" fill="#FF4B4B"/>
+                                        <rect x="8.97729" y="8.59357" width="1.25" height="10" transform="rotate(135 8.97729 8.59357)" fill="#FF4B4B"/>
+                                        <rect x="8.09351" y="1.52246" width="1.25" height="10" transform="rotate(45 8.09351 1.52246)" fill="#FF4B4B"/>
+                                    </svg>
+                                    | фурнитуры и др.
+            include components/footer 
+            +footer
+        script(src="js/app.min.js") 

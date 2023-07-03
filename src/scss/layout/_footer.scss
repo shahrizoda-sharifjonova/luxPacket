@@ -1,1 +1,172 @@
-// Футер
+.footer{
+    background: var(--black, #262626);
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    @include media(768){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    &__row{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @include media(768){
+            flex-direction: column;
+        }
+        &:not(:last-of-type){
+            padding-bottom: 30px;
+            border-bottom: 1px solid #444;
+        }
+        &:not(:first-of-type){
+            padding-top: 30px;
+        }
+        &:nth-of-type(2){
+            @include media(1200){
+                flex-direction: column;
+            }
+        }
+    }
+    &__medias{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 448px;
+        width: 100%;
+        @include media(575){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__media{
+        width: calc(50% - 15px);
+        display: flex;
+        align-items: center;
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        @include media(575){
+            width: 100%;
+        }
+        &:not(:last-of-type){
+            @include media(575){
+                margin-bottom: 16px;
+            }
+        }
+        &:first-of-type, &:nth-of-type(2){
+            margin-bottom: 20px;
+            @include media(575){
+                margin-bottom: 16px;
+            }
+        }
+        svg{
+            margin-right: 8px;
+        }
+    }
+    &__logo{
+        color: #FF4B4B;
+        font-size: 53px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        @include media(992){
+            font-size: 35px;
+        }
+        @include media(768){
+            order: -1;
+            margin-bottom: 30px;
+        }
+        @include media(575){
+            font-size: 30px;
+        }
+        span{
+            color: #ffff;
+        }
+    }
+    &__info{
+        @include media(1200){
+            margin-bottom: 30px;
+        }
+    }
+    &__li{
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        @include media(575){
+            font-size: 14px;
+        }
+        &:not(:last-of-type){
+            margin-bottom: 8px;
+        }
+    }
+    &__lists{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        @include media(1200){
+            width: 100%;
+            justify-content: space-between;
+        }
+        @include media(768){
+            flex-direction: column;
+        }
+    }
+    &__list{
+        &:not(:last-of-type){
+            margin-right: 60px;
+            @include media(768){
+                margin-right: 0;
+                margin-bottom: 16px;
+            }
+        }
+        .footer__li{
+            &:not(:last-of-type){
+                @include media(768){
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+    &__li{
+        &:not(:last-of-type){
+            margin-bottom: 8px;
+        }
+    }
+    &__link{
+        text-align: right;
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        width: 100%;
+        display: block;
+        @include media(1200){
+            text-align: left;
+        }
+        @include media(575){
+            font-size: 14px;
+        }
+    }
+    &__p{
+        color: #555;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        @include media(575){
+            font-size: 14px;
+        }
+        &:first-of-type{
+            @include media(768){
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

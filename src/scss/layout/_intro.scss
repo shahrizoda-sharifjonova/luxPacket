@@ -122,6 +122,7 @@
             justify-content: center;
             transform: translateY(-35px);
             &-bullet{
+                cursor: pointer;
                 height: 12px;
                 width: 12px;
                 border-radius: 50%;

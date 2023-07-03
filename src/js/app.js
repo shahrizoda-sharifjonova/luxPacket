@@ -75,6 +75,18 @@ new Swiper(".reports__swiper", {
     }
 });
 
+new Swiper(".adhesive__swiper", {
+    grabCursor: true,
+    modules: [Navigation],
+    slidesPerView: 1,  
+    spaceBetween:40,
+    watchSlidesProgress: true,
+    navigation:{
+      prevEl: '.adhesive__btn-prev',
+      nextEl: '.adhesive__btn-next',
+    },
+});
+
 $(document).ready(function() {
   $(".accordion > .accordion__button").on("click", function() {
     if ($(this).hasClass("active")) {
