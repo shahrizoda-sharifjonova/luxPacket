@@ -1,3 +1,115 @@
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -2065,13 +2177,13 @@
   width: calc(100% + 50px);
   margin-left: -25px;
   margin-right: -25px;
-  margin-right: 15px;
   max-width: 585px;
 }
 
 .adhesive .swiper {
   width: 100%;
   position: relative;
+  border-radius: 23px;
 }
 
 .adhesive .swiper-wrapper {
@@ -2087,21 +2199,55 @@
 }
 
 .adhesive .swiper-slide {
+  height: 500px;
+  border-radius: 23px;
+  background: #fff;
+  overflow: hidden;
   -webkit-box-shadow: 0px 14px 23px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 14px 23px 0px rgba(0, 0, 0, 0.05);
-  border-radius: 23px;
+}
+
+.adhesive .swiper-slide:nth-of-type(2) .adhesive__img {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.adhesive .swiper-slide:nth-of-type(2) .adhesive__img img {
+  width: 430px;
+}
+
+.adhesive .swiper-slide.transparent-slide {
+  background: #010202;
 }
 
 .adhesive__img {
   width: 100%;
+  max-width: 585px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .adhesive__img img {
-  width: 100%;
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .adhesive__right {
   padding-top: 25px;
+  padding-left: 40px;
 }
 
 .adhesive__title {
@@ -2918,11 +3064,11 @@ input[type=number] {
         -ms-transform: translateY(0);
             transform: translateY(0);
     height: 100%;
-    max-height: 380px;
-    max-width: calc(100% - 60px);
-    -webkit-transform: translateX(30px);
-        -ms-transform: translateX(30px);
-            transform: translateX(30px);
+    max-height: 300px;
+    max-width: 330px;
+    -webkit-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+            transform: translateX(-50px);
   }
 
   .advantages {
@@ -3046,6 +3192,22 @@ input[type=number] {
   .ask__left {
     margin-right: 0;
     margin-bottom: 30px;
+  }
+
+  .adhesive .swiper-slide {
+    height: 341px;
+  }
+
+  .adhesive .swiper-slide:nth-of-type(2) .adhesive__img img {
+    max-height: 90%;
+    max-width: 90%;
+    width: auto;
+  }
+
+  .adhesive__img img {
+    max-height: 90%;
+    max-width: 90%;
+    width: auto;
   }
 
   .adhesive__title {
@@ -3294,15 +3456,14 @@ input[type=number] {
             flex-direction: column;
   }
 
-  .adhesive__slider {
-    max-width: 100%;
-    margin-right: 0;
-    margin-left: 0;
+  .adhesive .swiper-slide {
+    height: 450px;
   }
 
   .adhesive__right {
     padding-top: 0;
     margin-top: 15px;
+    padding-left: 0;
   }
 
   .adhesive__title {
@@ -3464,6 +3625,22 @@ input[type=number] {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .intro .swiper-slide {
+    height: 360px;
+  }
+
+  .intro__img {
+    max-width: 360px;
+  }
+
+  .intro__img img {
+    max-height: 260px;
+    max-width: 280px;
+    -webkit-transform: translateX(-30px);
+        -ms-transform: translateX(-30px);
+            transform: translateX(-30px);
   }
 
   .advantages__title {
@@ -3648,6 +3825,57 @@ input[type=number] {
     font-size: 12px;
   }
 
+  .adhesive__slider {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    padding: 20px 0 20px 0;
+  }
+
+  .adhesive .swiper-slide {
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: 360px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .adhesive .swiper-slide:nth-of-type(2) .adhesive__img img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 23px;
+  }
+
+  .adhesive .swiper-slide.transparent-slide {
+    background: transparent;
+  }
+
+  .adhesive__img {
+    max-width: 360px;
+  }
+
+  .adhesive__img img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 23px;
+  }
+
   .adhesive__btn {
     width: 100%;
   }
@@ -3657,9 +3885,28 @@ input[type=number] {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 445px) {
+  .adhesive .swiper-slide {
+    height: 280px;
+  }
+
+  .adhesive__img {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 389px) {
   .intro .swiper-slide {
-    height: 370px;
+    height: 280px;
+  }
+
+  .intro__img {
+    max-width: 280px;
+  }
+
+  .intro__img img {
+    max-height: 190px;
+    max-width: 240px;
   }
 }
 
@@ -3681,11 +3928,5 @@ input[type=number] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-
-@media (max-width: 350px) {
-  .intro .swiper-slide {
-    height: 330px;
   }
 }
