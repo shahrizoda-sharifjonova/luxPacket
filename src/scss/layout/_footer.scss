@@ -51,6 +51,12 @@
         @include media(575){
             width: 100%;
         }
+        &:nth-of-type(odd){
+            margin-right: 30px;
+            @include media(992){
+                margin-right: 20px;
+            }
+        }
         &:not(:last-of-type){
             @include media(575){
                 margin-bottom: 16px;
