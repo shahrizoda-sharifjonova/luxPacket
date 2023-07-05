@@ -144,7 +144,17 @@
         @include media(445){
             max-width: 280px;
         }
-
+        &.adhesive-img-last{
+            @include media(575){
+                border-radius: 23px;
+                background: #fff;
+            }
+            img{
+                @include media(575){
+                    object-fit: contain;
+                }
+            }
+        }
         img{
             width: 500px;
             object-fit: cover;
@@ -242,9 +252,6 @@
             justify-content: center;
             transition: 300ms ease;
             margin-right: 16px;
-            img{
-                transform: translateY(2px);
-            }
             &:hover{
                 background: #C12424;
             }
@@ -259,9 +266,6 @@
             align-items: center;
             justify-content: center;
             transition: 300ms ease;
-            img{
-                transform: translateY(2px);
-            }
             &:hover{
                 background: #C12424;
             }

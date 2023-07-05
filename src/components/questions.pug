@@ -16,11 +16,7 @@ mixin questions()
                     .questions__item 
                         .questions__wrapper
                             p.questions__subtitle Тираж
-                            select.questions__select 
-                                option(value="0").questions__option Тираж 
-                                option(value="1").questions__option Тираж 
-                                option(value="2").questions__option Тираж 
-                                option(value="3").questions__option Тираж 
+                            input(type="number" placeholder="Тираж" required).questions__input
                         .questions__wrapper
                             p.questions__subtitle Приложить файлы
                             .questions__input
